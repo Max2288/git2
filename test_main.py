@@ -4,7 +4,7 @@ from functions import opredelitel_3_poryadka
 from functions import fib
 import pytest
 
-test_1 = [[1]]
+test_1 = [([[1]],1),([[5]],5),([[8]],8)]
 
 @pytest.mark.parametrize('test_inp, expect',test_1)
 def test_determinant_1(test_inp,expect):
