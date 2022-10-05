@@ -22,8 +22,8 @@ test_3 = [([[15, -7,  5], [-1, 4,  4], [3, 6, 9]], -57), ([[13, -7,  -1], [-1, 7
 def test_determinant_3(test_inp,expect):
     assert opredelitel_3_poryadka(test_inp) == expect
 
-test_for_fib = [(100,354224848179261915075),(5,5),(-7,13),(-8,-21)]
+# test_for_fib = [(100,354224848179261915075),(5,5),(-7,13),(-8,-21)]
 
-@pytest.mark.parametrize('test_inp, expect',test_for_fib)
-def test_fib(test_inp, expect):
-    assert fib(test_inp) == expect
+# @pytest.mark.parametrize('test_inp, expect',test_for_fib)
+# def test_fib(test_inp, expect):
+#     assert fib(test_inp) == expect
