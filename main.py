@@ -14,4 +14,20 @@ if __name__ == '__main__':
         if command == 'off':
             print('Программа завершена!')
             break
-        
+        elif command == 'fibonacci':
+            number = int(input('Введите номер элемента последовательности: '))
+            print(fib(number))
+        elif command == 'first_order':
+            mat = [[int(number) for number in input('Строка матрицы ').split()]
+                   for doings in range(1)]
+            print(opredelitel_first_order(mat))
+        elif command == 'sec_order':
+            mat = [[int(number) for number in input('Строка матрицы ').split()]
+                   for doings in range(2)]
+            print(opredelitel_second_order(mat))
+        if command == 'third_order':
+            mat = [[int(number) for number in input('Строка матрицы ').split()]
+                   for doings in range(3)]
+            print(opredelitel_third_order(mat))
+        else:
+            print('Неверная программа!')
