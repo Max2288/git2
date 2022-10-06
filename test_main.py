@@ -1,6 +1,6 @@
-from functions import opredelitel_1_poryadka
-from functions import opredelitel_2_poryadka
-from functions import opredelitel_3_poryadka
+from functions import opredelitel_first_order
+from functions import opredelitel_second_order
+from functions import opredelitel_third_order
 from functions import fib
 import pytest
 
@@ -27,7 +27,7 @@ def test_determinant_first(test_inp: list, expect: int):
         test_inp (list): test input for function.
         expect (int): test expecpection for function.
     """
-    assert opredelitel_1_poryadka(test_inp) == expect
+    assert opredelitel_first_order(test_inp) == expect
 
 
 test_for_opr_second = []
@@ -53,7 +53,7 @@ def test_determinant_second(test_inp: list, expect: int):
         test_inp (list): test input for function.
         expect (int): test expecpection for function.
     """
-    assert opredelitel_2_poryadka(test_inp) == expect
+    assert opredelitel_second_order(test_inp) == expect
 
 
 test_for_opr_third = []
@@ -79,7 +79,7 @@ def test_determinant_third(test_inp: list, expect: int):
         test_inp (list): test input for function.
         expect (int): test expecpection for function.
     """
-    assert opredelitel_3_poryadka(test_inp) == expect
+    assert opredelitel_third_order(test_inp) == expect
 
 
 test_for_fib = []
