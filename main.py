@@ -29,5 +29,4 @@ if __name__ == '__main__':
             mat = [[int(number) for number in input('Строка матрицы ').split()]
                    for doings in range(3)]
             print(opredelitel_third_order(mat))
-        else:
-            print('Неверная программа!')
+
